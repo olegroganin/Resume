@@ -440,10 +440,9 @@ body {
 		}
 	}
 	&__main-portfolio-links {
-		display: flex;
-		justify-content: space-between;
-		a {
-			padding: 0 20px 0 0;
+		display: grid;
+		grid-template-columns: repeat(2, 2fr);
+		grid-gap: 20px 20px;
 			img {
 				display: block;
 				background-size: cover;
@@ -453,7 +452,6 @@ body {
 				transition: 0.2s linear;
 				&:hover {
 					max-width: 98%;
-				}
 			}
 		}
 	}
