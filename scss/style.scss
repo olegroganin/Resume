@@ -443,7 +443,7 @@ body {
 		display: grid;
 		grid-template-columns: repeat(2, 2fr);
 		grid-gap: 20px 20px;
-			img {
+		img {
 				display: block;
 				background-size: cover;
 				max-width: 100%;
@@ -452,7 +452,7 @@ body {
 				transition: 0.2s linear;
 				&:hover {
 					max-width: 98%;
-			}
+		   }
 		}
 	}
 }
@@ -507,13 +507,6 @@ body {
 		display: block;
 		background-size: cover;
 	}
-
-	.resume__main-portfolio-links {
-		flex-direction: column;
-		a {
-			padding-bottom: 20px;
-		}
-	}
 }
 
 @media (max-width: 575px) {
@@ -530,5 +523,10 @@ body {
 		display: block;
 		background-size: cover;
 		padding-top: 30px;
+	}
+	.resume__main-portfolio-links {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 20px;
 	}
 }
